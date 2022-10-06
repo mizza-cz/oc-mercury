@@ -1,0 +1,6 @@
+.container {
+  padding: 0 32px;
+  @include media-breakpoint-down(lg) {
+    padding: 0 16px;
+  }
+}

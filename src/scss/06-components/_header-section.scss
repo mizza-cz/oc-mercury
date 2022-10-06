@@ -1,0 +1,23 @@
+.header-section {
+  padding-top: 120px;
+  text-align: center;
+  max-width: 47rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto 6.375rem;
+  .h2 {
+    max-width: 320px;
+  }
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 40px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+  }
+}
+.o-content .header-section {
+  margin-bottom: 70px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,11 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  transition: text-decoration-color 0.3s;
+  line-height: inherit;
+  display: inline-block;
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}

@@ -1,0 +1,35 @@
+/*! purgecss start ignore */
+.mx-10 {
+  margin-left: -5%;
+  margin-right: -5%;
+  .col {
+    padding: 0 2.5%;
+  }
+  @media (max-width: 1800px) {
+    margin-left: -20px;
+    margin-right: -20px;
+    .col {
+      padding: 0 20px;
+    }
+  }
+}
+.col .h2 {
+  margin-bottom: 24px;
+  @include media-breakpoint-only(xxl) {
+    margin-bottom: 80px;
+  }
+  @include media-breakpoint-only(xl) {
+    margin-bottom: 60px;
+  }
+  @include media-breakpoint-only(lg) {
+    margin-bottom: 40px;
+  }
+}
+main {
+  padding-top: 120px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 72px;
+  }
+}
+
+/*! purgecss end ignore */
