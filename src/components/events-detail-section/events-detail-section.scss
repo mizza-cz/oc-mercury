@@ -1,0 +1,6 @@
+.c-events-detail-section {
+  margin-bottom: 140px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+}

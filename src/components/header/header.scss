@@ -201,10 +201,12 @@
   font-size: 24px;
   line-height: 100%;
   font-weight: 500;
-  padding: 0 24px;
-  text-decoration: underline;
-  text-decoration-color: transparent;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
   transition: all 0.3s;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2px;
   @include media-breakpoint-down(xxl) {
     line-height: 50px;
     font-size: 18px;
@@ -216,13 +218,16 @@
   }
 }
 .nav-item {
+  padding: 0 24px;
+
   @include media-breakpoint-down(xxl) {
     width: 100%;
   }
+  .nav-link.active,
   .nav-link:focus,
   .nav-link:hover {
+    border-bottom: 2px solid #fff;
     color: var(--color-light);
-    text-decoration-color: inherit;
   }
 }
 .dropdown {

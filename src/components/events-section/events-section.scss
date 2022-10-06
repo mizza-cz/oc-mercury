@@ -1,0 +1,21 @@
+.c-events-section {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 4rem;
+  }
+  .h1 {
+    margin-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+  }
+  .row {
+    margin-left: -16px;
+    margin-right: -16px;
+    .col-12 {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>02.0_service-detail - MERCURY</title>
+	<title>04.0_parking - MERCURY</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202210061389" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202210061389" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202210062626" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202210062626" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -61,43 +61,105 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-
-			<section class="c-services-detail-section">
+			<section class="c-parking-section">
 				<div class="container">
 					<div class="header-section">
-						<h1 class="mb-6 h1">Autobusové nádraží</h1>
+						<h1 class="mb-6 h1">Parkování v Mercury centru</h1>
 						<p class="p1">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-							nonummy nibh euismod tincidunt ut laoreet
+							V Mercury centru jsou k dispozici k parkování dvě podzemní podlaží.
 						</p>
 					</div>
-					<div class="row mx-10 gy-10">
-						<div class="col-lg-6 col col-12">
-							<div class="c-services-detail__img">
-								<img src="images/content/foto-service-section.png" loading="lazy" alt="" />
+					<div class="c-parking-section__inner">
+						<div class="text-center mb-10">
+							<h2 class="h2 mb-5">1. PP Placené</h2>
+							<p class="p1">Po–Ne: 0:00–24:00</p>
+						</div>
+						<div class="c-parking__table">
+							<div class="c-parking__table-header">
+								<span class="h3">Podmínky</span>
+								<span class="h3">Cena</span>
+							</div>
+							<div class="c-parking__table-respons">
+								<table>
+									<tbody>
+										<tr>
+											<td>0 min. – 15 min.</td>
+											<td>0 Kč</td>
+										</tr>
+										<tr>
+											<td>15 min. – 60 min.</td>
+											<td>20 Kč</td>
+										</tr>
+										<tr>
+											<td>každá další započatá hodina</td>
+											<td>20 Kč</td>
+										</tr>
+										<tr>
+											<td>maximální cena na 24 hod.</td>
+											<td>480 Kč</td>
+										</tr>
+										<tr>
+											<td>každých dalších započatých 24 hod.</td>
+											<td>480 Kč</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="c-parking__table-footer">
+								<div class="h3">Parkoviště je přístupné 24hod. denně.</div>
 							</div>
 						</div>
-						<div class="col-xl-4 col-lg-6 mx-auto col col-12">
-							<div class="o-content">
-								<h2 class="h2">Lorem ipsum dolor sit amet, consectetuer</h2>
-								<p>
-									V prostorách podzemního parkoviště obchodního centra MERCURY České
-									Budějovice je pro Vás v provozu myčka aut, kde se Vám během vašeho
-									nákupu postaráme o čistotu vašeho auta. Mimo jiné patří mezi naše
-									služby ruční mytí karoserie, bezkontaktní mytí voskování a sušení
-									karoserie, vysávání a suché čištění interiérů, ošetření vnitřních
-									plastů, čištění a leštění oken a zrcátek, čištění disků a impregnace
-									pneumatik, provonění parfémem.
-								</p>
-								<p>
-									<strong>jízdní řády IDOS <a href="#">ZDE</a></strong>
-								</p>
+						<div class="text-center mb-10">
+							<h3 class="h2 mb-5">2. PP Placené</h3>
+							<p class="p1">3 hod. zdarma, Po–Ne: 6:30–23:00</p>
+						</div>
+						<div class="c-parking__table">
+							<div class="c-parking__table-header">
+								<span class="h3">Podmínky</span>
+								<span class="h3">Cena</span>
+							</div>
+							<div class="c-parking__table-respons">
+								<div class="h3 mb-5">v čase od 6:30 hod. – 23:00 hod.</div>
+								<table>
+									<table>
+										<tbody>
+											<tr>
+												<td>0 hod. – 3 hod.</td>
+												<td>0 Kč</td>
+											</tr>
+											<tr>
+												<td>3 hod. – 4 hod.</td>
+												<td>80 Kč</td>
+											</tr>
+											<tr>
+												<td>každá další započatá hodina</td>
+												<td>20 Kč</td>
+											</tr>
+										</tbody>
+									</table>
+								</table>
+								<h4 class="h3 mb-5">v čase od 23:00 hod. – 6:30 hod.</h4>
+								<table>
+									<table>
+										<tbody>
+											<tr>
+												<td>noční parkování bez možnosti výjezdu</td>
+												<td>350 Kč</td>
+											</tr>
+										</tbody>
+									</table>
+								</table>
+							</div>
+							<div class="c-parking__table-footer">
+								<div class="h3">
+									v čase od 23:00 hod. do 6:30 hod. je toto parkoviště nepřístupné!!!
+								</div>
 							</div>
 						</div>
+						<p class="c-parking__pay"><strong>Platba probíhá v hotovosti.</strong></p>
 					</div>
 				</div>
 			</section>
-
 			<section class="social-section">
 				<div class="container">
 					<h3 class="h1 text-center mb-5">Zůstaňte s námi v kontaktu</h3>
