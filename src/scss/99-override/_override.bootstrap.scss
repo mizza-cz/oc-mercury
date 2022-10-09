@@ -1,18 +1,5 @@
 /*! purgecss start ignore */
-.mx-10 {
-  margin-left: -5%;
-  margin-right: -5%;
-  .col {
-    padding: 0 2.5%;
-  }
-  @media (max-width: 1800px) {
-    margin-left: -20px;
-    margin-right: -20px;
-    .col {
-      padding: 0 20px;
-    }
-  }
-}
+
 .col .h2 {
   margin-bottom: 24px;
   @include media-breakpoint-only(xxl) {

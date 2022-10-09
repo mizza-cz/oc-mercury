@@ -1,0 +1,60 @@
+.c-foodcourt-section {
+  margin-bottom: 140px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+  &__location {
+    width: 100%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__time {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    p {
+      margin-bottom: 18px;
+    }
+    .p1 {
+      margin-bottom: 0;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: 24px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+    .h2 {
+      padding: 0 16px;
+      margin-bottom: 16px !important;
+    }
+  }
+  &__logo {
+    width: 408px;
+    padding: 0 16px;
+    height: 200px;
+    margin-bottom: 16px;
+    @media (max-width: 1920px) {
+      height: auto;
+      width: 240px;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
