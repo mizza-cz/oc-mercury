@@ -1,0 +1,130 @@
+<section class="c-archive-shops">
+  <div class="container">
+    <div class="header-section">
+      <h1 class="mb-6 h1">Obchody</h1>
+      <p class="p1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut laoree
+      </p>
+    </div>
+    <div class="c-archive-shops__form">
+      <form action="">
+        <div class="c-archive-shops__form-search">
+          <input type="text" placeholder="Hledej" />
+          <button class="c-archive-shops__form-btn" type="submit">
+            <img src="images/content/close.png" alt="" />
+          </button>
+        </div>
+        <ul class="c-archive-shops__form-list">
+          <li>
+            <input name="shop" type="checkbox" id="domacnost" />
+            <label for="domacnost">Domácnost a dekorace</label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="drogerie" />
+            <label for="drogerie">Drogerie a parfumerie</label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="elektro" />
+            <label for="elektro">Elektro </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="gastro" />
+            <label for="gastro">Gastro </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="klenoty" />
+            <label for="klenoty">Klenoty </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="knihy" />
+            <label for="knihy">Knihy </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="moda" />
+            <label for="moda">Oblečení a móda </label>
+          </li>
+
+          <li>
+            <input name="shop" type="checkbox" id="potraviny" />
+            <label for="potraviny">Potraviny </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="deti" />
+            <label for="deti">Pro děti </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="sluzby" />
+            <label for="sluzby">Služby </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="tabak" />
+            <label for="tabak">Tabák </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="sport" />
+            <label for="sport">Sport </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="zvirata" />
+            <label for="zvirata">Zvířata </label>
+          </li>
+          <li>
+            <input name="shop" type="checkbox" id="ostatni" />
+            <label for="ostatni">Ostatní </label>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="c-archive-shops__inner">
+      <h2 class="h1">Domácnost a dekorace</h2>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+      </div>
+      <h2 class="h1">Drogerie a parfumerie</h2>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+      </div>
+      <h2 class="h1">Elektro</h2>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+      </div>
+      <h2 class="h1">Gastro</h2>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-lg-4 col-12">
+          {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

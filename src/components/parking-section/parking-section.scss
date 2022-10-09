@@ -11,7 +11,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
-    color: #000;
+    color:  var(--color-dark);
   }
 }
 .c-parking__pay {
@@ -26,8 +26,8 @@
     margin-bottom: 68px;
   }
   &-respons {
-    background-color: #000;
-    color: #fff;
+    background-color:  var(--color-dark);
+    color:  var(--color-light);
     padding: 100px 40px;
 
     @include media-breakpoint-down(md) {
