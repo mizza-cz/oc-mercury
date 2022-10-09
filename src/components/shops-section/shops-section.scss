@@ -1,0 +1,12 @@
+.c-shops-section {
+  margin-bottom: 140px;
+  @include media-breakpoint-down(xxl) {
+    margin-bottom: 60px;
+  }
+  .h1 {
+    margin-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+  }
+}
