@@ -1,0 +1,6 @@
+.c-sales-section {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,43 @@
+<section class="c-sales-section">
+  <div class="container">
+    <div class="header-section">
+      <h1 class="mb-6 h1">Novinky</h1>
+      <p class="p1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut lao
+      </p>
+    </div>
+    <div class="row gy-6">
+      <div class="col-xl-4 col-md-6 col-12">
+        {% include "@components/news-item/news-item.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6 col-12">
+        <div class="news-item">
+          <a href="#">
+            <div class="news-item__img">
+              <img
+                src="https://via.placeholder.com/496x496"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="news-item__info">
+              <h2 class="h2">Zimní výprodej</h2>
+              <p class="p1">20. 1. – 31. 1. 2022</p>
+              <p>
+                Lorem ipsum dolor sitamet, consectetuer adipiscing elit, sed
+                diam nonummy nibh.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 col-12">
+        {% include "@components/news-item/news-item.twig" %}
+      </div>
+      <div class="col-xl-4 col-md-6 col-12">
+        {% include "@components/news-item/news-item.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
