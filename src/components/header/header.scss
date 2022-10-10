@@ -135,7 +135,7 @@
 }
 .c-header__opener.is-open {
   span {
-    border-color:  var(--color-dark);
+    border-color: var(--color-dark);
     background: var(--color-dark);
   }
   span:before {
@@ -199,7 +199,7 @@
   }
 }
 .nav-link {
-  font-family: "Gotham", sans-serif;
+  font-family: "Gotham";
   color: var(--color-light);
   font-size: 24px;
   line-height: 100%;
@@ -281,7 +281,7 @@
     font-weight: 700;
     color: var(--color-dark);
     padding: 8px 16px;
-    font-family: "Gotham", sans-serif;
+    font-family: "Gotham";
     @include media-breakpoint-down(xxl) {
       background: var(--color-dark);
       color: var(--color-light);
