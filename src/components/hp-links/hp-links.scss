@@ -9,6 +9,10 @@
     margin-bottom: 40px;
     text-align: center;
     display: block;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: var(--color-dark);
+    }
     .cls-2 {
       fill: #000;
     }
