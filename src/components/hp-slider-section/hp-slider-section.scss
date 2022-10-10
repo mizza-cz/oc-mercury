@@ -1,0 +1,109 @@
+.hp-slider-section {
+  margin-bottom: 130px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 60px;
+  }
+  .slick-dots {
+    margin: 0 auto 40px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    .slick-list {
+      padding-bottom: 64px;
+      @include media-breakpoint-down(xl) {
+        padding-bottom: 24px;
+      }
+    }
+    @media (max-width: 1640px) {
+      padding: 0 20px;
+      .slider__btnnext {
+        right: -1rem;
+      }
+      .slider__btnprev {
+        left: -1rem;
+      }
+    }
+    @media (max-width: 1321px) {
+      padding: 0;
+    }
+    .slick-slide.slick-current.slick-active {
+      width: 100%;
+      height: 100%;
+      & > div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__box {
+    display: flex !important;
+    flex-wrap: wrap;
+    .hp-slider-section__item {
+      margin-bottom: 32px;
+    }
+  }
+  &__item {
+    flex: 0 0 50%;
+    padding: 0 16px;
+    @include media-breakpoint-down(xxl) {
+      .hp-slider-section__item {
+        flex: 0 0 50%;
+      }
+    }
+    &-info {
+      background-color: var(--color-light);
+      color: var(--color-dark);
+      position: absolute;
+      bottom: 0;
+      padding: 20px 44px;
+      width: 100%;
+      min-height: 100px;
+      @include media-breakpoint-down(lg) {
+        padding-left: 16px;
+        padding-right: 16px;
+        min-height: auto;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 7rem;
+        background: var(--color-light);
+        transform: translateY(-40px) skewY(2.5deg);
+        position: absolute;
+        bottom: -27px;
+        right: 0;
+        transform-origin: right;
+        z-index: 5;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+      .h2 {
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 5;
+      }
+    }
+    a {
+      box-shadow: 5px 5px 12px 0px #ededed, 1px 1px 12px 3px rgba(#e6e6e6, 1);
+      aspect-ratio: 1034/1034;
+      transition: all 0.3s;
+      position: relative;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        z-index: 9;
+        transform: scale(1.15);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}

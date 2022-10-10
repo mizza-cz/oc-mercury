@@ -21,3 +21,19 @@
     margin-bottom: 40px;
   }
 }
+
+.hp-header-section {
+  text-align: center;
+  margin-bottom: 64px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 40px;
+  }
+  .h1 {
+    margin-bottom: 24px;
+  }
+  .p1 {
+    color: #808080;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

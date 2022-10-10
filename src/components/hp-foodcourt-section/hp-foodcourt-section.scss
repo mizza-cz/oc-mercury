@@ -1,0 +1,30 @@
+.hp-foodcourt-section {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 60px;
+  }
+  &__inner {
+    margin-bottom: 110px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 60px;
+    }
+  }
+  .restaurant-item__info:before {
+    bottom: 1.5rem;
+    height: 50px;
+  }
+  .restaurant-item__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    height: 7rem;
+  }
+  .restaurant-item__info img {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+}

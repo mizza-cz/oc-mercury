@@ -1,0 +1,29 @@
+.hp-links {
+  &-wrapper {
+    margin-bottom: 82px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 60px;
+    }
+  }
+  &__item {
+    margin-bottom: 40px;
+    text-align: center;
+    display: block;
+    .cls-2 {
+      fill: #000;
+    }
+    .p1 {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    svg,
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 32px;
+      text-align: center;
+      display: block;
+      object-fit: contain;
+    }
+  }
+}
