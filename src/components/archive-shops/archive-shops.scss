@@ -19,7 +19,7 @@
   &__form {
     margin: 0 auto 7rem;
     @include media-breakpoint-down(lg) {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
     form {
       display: block;
@@ -86,6 +86,9 @@
   max-width: 86rem;
 
   margin: 0 auto;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   @media (max-width: 360px) {
     flex-direction: column;
   }
@@ -167,5 +170,36 @@
         font-size: 18px;
       }
     }
+  }
+}
+.c-archive-shops__form-filter {
+  display: none;
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  width: max-content;
+  padding-right: 40px;
+
+  &::before {
+    content: "";
+    transition: all 0.3s;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-image: url("../images/ico/arrow-right-filtr.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+  }
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+}
+.c-archive-shops__form-filter.c-archive-shops__form-filter--closed {
+  &::before {
+    transform: rotate(90deg);
   }
 }

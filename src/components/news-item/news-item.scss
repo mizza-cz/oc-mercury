@@ -3,7 +3,7 @@
   position: relative;
   &__img {
     width: 100%;
-    height: 496px;
+    aspect-ratio: 496/496;
     @include media-breakpoint-down(md) {
       aspect-ratio: 496/496;
       height: auto;

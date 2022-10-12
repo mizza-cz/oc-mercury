@@ -3,4 +3,13 @@
   @include media-breakpoint-down(lg) {
     margin-bottom: 60px;
   }
+  .section-img {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 10rem;
+    align-self: flex-start; /* <-- this is the fix */
+    @include media-breakpoint-down(lg) {
+      position: static;
+    }
+  }
 }

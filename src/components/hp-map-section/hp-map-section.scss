@@ -4,14 +4,15 @@
     position: relative;
 
     aspect-ratio: 1920/1130;
-
+    @include media-breakpoint-down(md) {
+      aspect-ratio: 768/768;
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       @include media-breakpoint-down(lg) {
         margin-bottom: 40px;
-        min-height: 240px;
       }
     }
     .btn {

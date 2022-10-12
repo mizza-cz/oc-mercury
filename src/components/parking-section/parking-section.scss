@@ -11,7 +11,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0 auto;
-    color:  var(--color-dark);
+    color: var(--color-dark);
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 .c-parking__pay {
@@ -26,8 +30,8 @@
     margin-bottom: 68px;
   }
   &-respons {
-    background-color:  var(--color-dark);
-    color:  var(--color-light);
+    background-color: var(--color-dark);
+    color: var(--color-light);
     padding: 100px 40px;
 
     @include media-breakpoint-down(md) {
@@ -103,6 +107,9 @@
       right: 0;
       transform-origin: left;
       z-index: 5;
+      @include media-breakpoint-down(md) {
+        bottom: -1.7rem;
+      }
     }
   }
 }
