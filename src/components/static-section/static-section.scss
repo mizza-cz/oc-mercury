@@ -12,4 +12,122 @@
       position: static;
     }
   }
+  table {
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    width: 800px;
+  }
+
+  thead {
+    color: var(--color-light);
+    position: relative;
+    background-color: var(--color-green);
+
+    &::before {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 38px;
+      background-color: var(--color-green);
+      transform: translateY(-11px) skewY(-0.2deg);
+      position: absolute;
+      bottom: 2.5rem;
+      left: 0;
+      transform-origin: right;
+      z-index: 5;
+    }
+  }
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          padding-top: 40px;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+  td {
+    font-family: "Gotham", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: right;
+    padding: 12px 10px;
+    min-width: 150px;
+    &:first-child {
+      text-align: left;
+      width: 100%;
+      padding-left: 40px;
+    }
+    &:last-child {
+      padding-right: 40px;
+    }
+  }
+
+  .table-responsive {
+    margin-bottom: 150px;
+    position: relative;
+    @media (max-width: 830px) {
+      background-color: var(--color-dark);
+      color: var(--color-light);
+      padding-bottom: 40px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 68px;
+    }
+  }
+
+  th {
+    font-family: Gotham Black, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 20;
+    &:first-child {
+      text-align: left;
+      padding-left: 40px;
+    }
+    &:last-child {
+      padding-right: 40px;
+      text-align: right;
+    }
+  }
+}
+.section-img {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 10rem;
+  align-self: flex-start; /* <-- this is the fix */
+  @include media-breakpoint-down(lg) {
+    position: static;
+  }
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 12px;
+  background: #42534f;
+  border-radius: 100vw;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #42534f;
+  border-radius: 100vw;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: #84a59d;
+  border: 0.25em solid #84a59d;
+  border-radius: 100vw;
 }

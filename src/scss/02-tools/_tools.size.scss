@@ -1,3 +1,3 @@
 @function size($size) {
-    @return calc(var(--space) * #{($size)});
+  @return calc(var(--space) * #{($size)});
 }

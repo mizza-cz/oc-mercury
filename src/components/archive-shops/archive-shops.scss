@@ -66,14 +66,17 @@
       height: 100%;
       &:focus::placeholder {
         color: transparent;
-        padding-top: 18px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
       }
       &::placeholder {
         font-size: 24px;
-        padding-top: 18px;
         display: block;
         color: var(--color-dark);
-        height: 100%;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
       }
     }
   }

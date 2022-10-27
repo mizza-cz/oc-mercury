@@ -4,6 +4,7 @@
   padding-top: 36px;
   padding-bottom: 80px;
   position: relative;
+  overflow-x: hidden;
   @include media-breakpoint-down(lg) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -140,6 +141,8 @@
       border: none;
       width: 100%;
       outline: none;
+      height: 100%;
+      border: none;
       padding: 5px 16px 6px 38px;
       color: var(--color-dark);
       font-size: 16px;

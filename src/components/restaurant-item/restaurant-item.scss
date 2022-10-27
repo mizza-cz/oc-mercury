@@ -60,6 +60,9 @@
     &:hover {
       z-index: 9;
       transform: scale(1.15);
+      @include media-breakpoint-down(md){
+        transform: none;
+      }
     }
     img {
       width: 100%;

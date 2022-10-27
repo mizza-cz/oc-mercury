@@ -1,11 +1,10 @@
-$(".c-restaurant-slider .js-slider").slick({
+$(".c-events-section .js-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
   dots: false,
   infinite: true,
-  // speed: 3000,
-  // autoplay: true,
+
   prevArrow:
     '<button class="slider__btn slider__btnprev"><img src="/images/ico/left-slider.svg" alt="" ></button> ',
   nextArrow:

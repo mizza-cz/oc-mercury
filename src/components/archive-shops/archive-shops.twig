@@ -11,7 +11,11 @@
       <form action="">
         <div class="c-archive-shops__form-search">
           <input type="text" placeholder="Hledej" />
-          <button class="c-archive-shops__form-btn" type="submit">
+          <button
+            onclick='location.href = "\/obchody";return false;'
+            class="c-archive-shops__form-btn"
+            type="submit"
+          >
             <img src="images/content/close.png" alt="" />
           </button>
         </div>
@@ -84,6 +88,20 @@
       <div class="row gy-4">
         <div class="col-xxl-4 col-lg-6 col-12">
           {% include "@components/shop-item/shop-item.twig" %}
+        </div>
+        <div class="col-xxl-4 col-lg-6 col-12">
+          <div class="shop-item">
+            <a href="#">
+              <div class="shop-item__img">
+                <img src="images/content/shop.png" loading="lazy" alt="" />
+              </div>
+              <h4 class="h2">
+                TETA Drogerie a lékárna TETA Drogerie a lékárna
+              </h4>
+              <p class="p1">+420 734 176 425</p>
+              <p class="p1">+420 735 725 906</p>
+            </a>
+          </div>
         </div>
       </div>
       <h2 class="h1">Drogerie a parfumerie</h2>
