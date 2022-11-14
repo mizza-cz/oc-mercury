@@ -2,8 +2,7 @@
   margin-bottom: 60px;
   &__map {
     position: relative;
-
-    aspect-ratio: 1920/1130;
+    aspect-ratio: 1920/780;
     @include media-breakpoint-down(md) {
       aspect-ratio: 768/768;
     }
@@ -12,7 +11,7 @@
       height: 100%;
       object-fit: cover;
       @include media-breakpoint-down(lg) {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
       }
     }
     .btn {

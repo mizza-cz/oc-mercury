@@ -1,5 +1,8 @@
 .c-travel-section {
   margin-bottom: 120px;
+  .container {
+    padding: 0;
+  }
   @include media-breakpoint-down(xl) {
     margin-bottom: 60px;
   }

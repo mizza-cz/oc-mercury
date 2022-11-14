@@ -1,5 +1,6 @@
 tablesWrap();
 iframesWrap();
+tableDecore();
 
 // TABLE (wysiwyg editor) responsive
 function tablesWrap() {
@@ -19,6 +20,23 @@ function tablesWrap() {
     );
 
     contentTableWrap.appendChild(contentTables[i]);
+  }
+}
+function tableDecore() {
+  var contentRespons = document.querySelectorAll(
+      ".o-content .table-responsive"
+    ),
+    i;
+  for (i = 0; i < contentRespons.length; ++i) {
+    contentRespons[i].classList.add("table-responsive");
+    var contentResponsWrap = document.createElement("div");
+
+    contentResponsWrap.classList.add("table-decore");
+    contentRespons[i].parentNode.insertBefore(
+      contentResponsWrap,
+      contentRespons[i]
+    );
+    contentResponsWrap.appendChild(contentRespons[i]);
   }
 }
 

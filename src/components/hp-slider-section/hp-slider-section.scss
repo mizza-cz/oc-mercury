@@ -1,5 +1,5 @@
 .hp-slider-section {
-  margin-bottom: 130px;
+  margin-bottom: 8rem;
   @include media-breakpoint-down(xl) {
     margin-bottom: 60px;
   }
@@ -7,6 +7,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+  }
+  .container {
+    padding: 0;
   }
   &__box {
     display: flex !important;
@@ -81,7 +84,7 @@
       &:hover {
         z-index: 9;
         transform: scale(1.15);
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
           transform: none;
         }
       }

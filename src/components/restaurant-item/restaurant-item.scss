@@ -2,7 +2,6 @@
   padding: 0 16px;
 
   &__info {
-   
     background-color: var(--color-light);
     color: var(--color-dark);
     position: absolute;
@@ -60,7 +59,7 @@
     &:hover {
       z-index: 9;
       transform: scale(1.15);
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         transform: none;
       }
     }

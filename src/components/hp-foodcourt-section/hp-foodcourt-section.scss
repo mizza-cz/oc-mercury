@@ -1,13 +1,13 @@
 .hp-foodcourt-section {
-  margin-bottom: 120px;
+  margin-bottom: 8rem;
+  .container {
+    padding: 0;
+  }
   @include media-breakpoint-down(xl) {
     margin-bottom: 60px;
   }
   &__inner {
-    margin-bottom: 110px;
-    @include media-breakpoint-down(xl) {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 4.5rem;
   }
   .restaurant-item__info:before {
     bottom: 1.5rem;
@@ -27,4 +27,5 @@
     object-fit: contain;
     height: 100%;
   }
+  
 }
