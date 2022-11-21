@@ -7,7 +7,9 @@
   @include media-breakpoint-down(xl) {
     margin-bottom: 60px;
   }
-
+  @include media-breakpoint-down(lg) {
+    padding: 0 16px;
+  }
   &__link {
     display: block;
     width: 100%;

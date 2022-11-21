@@ -8,11 +8,11 @@
 
   @media (min-width: 1920px) {
     .container {
-      max-width: 1428px !important;
+      max-width: 1628px !important;
     }
   }
   .container {
-    max-width: 1144px !important;
+    max-width: 80rem !important;
   }
 
   @include media-breakpoint-down(lg) {

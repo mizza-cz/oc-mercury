@@ -35,7 +35,7 @@
     width: 288px;
     height: 78px;
     @include media-breakpoint-down(lg) {
-      width: 188px;
+      width: 12rem;
       height: 3rem;
     }
     img,
@@ -87,14 +87,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1055px;
+  max-width: 1350px;
   margin: 0 auto;
   padding-right: 8px;
   z-index: 10;
   padding-top: 8px;
   height: 100%;
   @media (min-width: 1920px) {
-    max-width: 1350px;
+    max-width: 100%;
     padding-right: 16px;
   }
   @media (max-width: 1600px) {
@@ -103,6 +103,7 @@
   @include media-breakpoint-down(xxl) {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 0;
   }
   &-nav {
     padding-top: 20px;
@@ -165,6 +166,7 @@
   transition: all 0.3s;
   @include media-breakpoint-down(sm) {
     padding: 0.25rem 0;
+    margin-left: 0;
   }
   span {
     transition: all 0.3s;

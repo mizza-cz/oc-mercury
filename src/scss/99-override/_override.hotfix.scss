@@ -228,7 +228,6 @@
   /*konec úprav Lukáš Rejmon*/
 }
 
-
 @media (max-width: 47.999em) {
   .hp-links__item img,
   .hp-links__item svg {
@@ -290,6 +289,112 @@
     padding-top: 0rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+#new-mercury .mt-40 {
+  margin-top: 10rem;
+}
+#new-mercury p {
+  font-size: 22px;
+  @media (max-width: 1023px) {
+    font-size: 20px;
+  }
+}
+#new-mercury .text-5xl {
+  font-size: 2.5rem;
+}
+
+#new-mercury .font-bold {
+  font-weight: 900;
+}
+
+#new-mercury .max-w-480 {
+  max-width: 34rem;
+}
+.o-content .btn {
+  display: flex !important;
+  margin-top: 60px;
+}
+#new-mercury .m-0 {
+  margin: 0;
+}
+
+#new-mercury .mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+#new-mercury .mb-8 {
+  margin-bottom: 2rem;
+}
+
+#new-mercury .inline-block {
+  display: inline-block;
+}
+
+#new-mercury .grid {
+  display: grid;
+}
+
+#new-mercury .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+#new-mercury .gap-16 {
+  gap: 4rem;
+  @media (max-width: 1023px) {
+    gap: 2rem;
+  }
+}
+
+#new-mercury .gap-32 {
+  gap: 8rem;
+  @media (max-width: 1023px) {
+    gap: 4rem;
+  }
+}
+
+#new-mercury .text-center {
+  text-align: center;
+}
+
+#new-mercury .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (max-width: 1023px) {
+  #new-mercury .tsm\:max-w-480 {
+    max-width: 30rem;
+  }
+
+  #new-mercury .tsm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #new-mercury .lg\:order-first {
+    order: -9999;
+  }
+
+  #new-mercury .lg\:gap-32 {
+    gap: 8rem;
+    @media (max-width: 1023px) {
+      gap: 4rem;
+    }
+  }
+
+  #new-mercury .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #new-mercury .lg\:text-left {
+    text-align: left;
+  }
+
+  #new-mercury .lg\:text-right {
+    text-align: right;
   }
 }
 /*! purgecss end ignore */
