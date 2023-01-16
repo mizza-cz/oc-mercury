@@ -1,0 +1,10 @@
+.lightgallery-item {
+  display: block;
+  aspect-ratio: 320/320;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
