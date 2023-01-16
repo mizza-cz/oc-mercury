@@ -1,10 +1,16 @@
-.lightgallery-item {
-  display: block;
-  aspect-ratio: 320/320;
-  img {
+.c-photogallery-section {
+  margin-bottom: 140px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 60px;
+  }
+  figure,
+  img,
+  a {
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
-    object-fit: cover;
+    img {
+      object-fit: cover;
+    }
   }
 }
