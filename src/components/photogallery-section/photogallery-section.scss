@@ -7,6 +7,15 @@
 .c-photogallery-grid {
   column-count: 4;
   column-gap: 10px;
+  @media only screen and (max-width: 1240px) and (min-width: 841px) {
+    column-count: 3;
+  }
+  @media only screen and (max-width: 840px) and (min-width: 481px) {
+    column-count: 2;
+  }
+  @media (max-width: 480px) {
+    column-count: 1;
+  }
   img {
     max-width: 100%;
     display: block;
