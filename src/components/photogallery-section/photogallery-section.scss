@@ -6,7 +6,7 @@
 }
 .c-photogallery-grid {
   column-count: 4;
-  column-gap: 10px;
+  column-gap: 0px;
   @media only screen and (max-width: 1240px) and (min-width: 841px) {
     column-count: 3;
   }
@@ -19,14 +19,19 @@
   img {
     max-width: 100%;
     display: block;
+    height: auto;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
   }
 
   figure {
     margin: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     display: grid;
     grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
     break-inside: avoid;
+    margin-bottom: 20px;
   }
 
   figure > img {
@@ -35,7 +40,31 @@
   }
 
   figure a {
-    color: black;
+    color: #555;
+    outline: none;
     text-decoration: none;
   }
+  figure {
+    a:hover,
+    a:focus,
+    a:visited:hover {
+      color: #22a1c4;
+      text-decoration: none;
+    }
+  }
 }
+
+.imgani img {
+  visibiliy: hidden;
+  transition: all 1s ease;
+  transform: translateY(160px);
+}
+.imgani img.anime {
+  visibiliy: visible;
+  transform: translateY(0);
+}
+
+#animated-thumbnail {
+  position: relative;
+}
+

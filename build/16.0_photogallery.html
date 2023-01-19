@@ -10,6 +10,8 @@
 	<link rel="preload" href="css/styles.css" as="style" />
 	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
 	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -66,61 +68,78 @@
 					<div class="header-section">
 						<h1 class="mb-6 h1">Název galerie</h1>
 					</div>
-					<div class="c-photogallery-grid js-gallery">
+					<div class="c-photogallery-grid" id="animated-thumbnail">
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/windmill.jpg">
-								<img src="https://assets.codepen.io/12005/windmill.jpg" alt="A windmill" />
-							</a>
+							<a href="https://1.bp.blogspot.com/-FDco02CRp_M/Wm7_y1G4MtI/AAAAAAAAN-U/zIZ8UH6RzKUe_hSxW3qWF7OuPOnv6wZ2ACLcBGAs/s1600/33.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/-FDco02CRp_M/Wm7_y1G4MtI/AAAAAAAAN-U/zIZ8UH6RzKUe_hSxW3qWF7OuPOnv6wZ2ACLcBGAs/s640/33.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/suspension-bridge.jpg">
-								<img src="https://assets.codepen.io/12005/suspension-bridge.jpg" alt="The Clifton Suspension Bridge" />
-							</a>
+							<a href="https://4.bp.blogspot.com/-udI8g-T4oLU/Wm7_7gFgX5I/AAAAAAAAN-4/eDjcDOBeWdkxjBop_YzyJeuAIplOsm8ogCLcBGAs/s1600/81651.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-udI8g-T4oLU/Wm7_7gFgX5I/AAAAAAAAN-4/eDjcDOBeWdkxjBop_YzyJeuAIplOsm8ogCLcBGAs/s640/81651.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/sunset.jpg">
-								<img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
-							</a>
+							<a href="https://1.bp.blogspot.com/--rMwWpO1vJA/Wm7_ywQ2x9I/AAAAAAAAN-Q/o7LaowZvlwo-ADwhiuz1V96OwoIQYKHZwCLcBGAs/s1600/4094001-wallpaper-minimalist.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/--rMwWpO1vJA/Wm7_ywQ2x9I/AAAAAAAAN-Q/o7LaowZvlwo-ADwhiuz1V96OwoIQYKHZwCLcBGAs/s640/4094001-wallpaper-minimalist.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/snowy.jpg">
-								<img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
-							</a>
+							<a href="https://3.bp.blogspot.com/-johAto_36nM/Wm7_z6LsHyI/AAAAAAAAN-c/NI_rGHNhpWM-VnnEzAWHYsSgVh0dwWzsACLcBGAs/s1600/4675134-wallpaper-minimalist.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-johAto_36nM/Wm7_z6LsHyI/AAAAAAAAN-c/NI_rGHNhpWM-VnnEzAWHYsSgVh0dwWzsACLcBGAs/s640/4675134-wallpaper-minimalist.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/bristol-balloons1.jpg">
-								<img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="a single checked balloon" />
-							</a>
+							<a href="https://1.bp.blogspot.com/-pea-82vMWP8/Wm7_yzjwaMI/AAAAAAAAN-Y/Xa3bx0C0Itcjq6Mbt26Nx0l2eDfZgT6wQCLcBGAs/s1600/164541026-minimalism-wallpapers.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/-pea-82vMWP8/Wm7_yzjwaMI/AAAAAAAAN-Y/Xa3bx0C0Itcjq6Mbt26Nx0l2eDfZgT6wQCLcBGAs/s640/164541026-minimalism-wallpapers.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/dog-balloon.jpg">
-								<img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="a hot air balloon shaped like a dog" />
-							</a>
+							<a href="https://2.bp.blogspot.com/-rP2kIPiCn3Y/Wm7_1JLC32I/AAAAAAAAN-g/2i2BJuDjHGoFhWQ89UaMpm3ZSQcyry2UQCLcBGAs/s1600/d6d0bca64f31251abe01f18b7b85c71d.png" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-rP2kIPiCn3Y/Wm7_1JLC32I/AAAAAAAAN-g/2i2BJuDjHGoFhWQ89UaMpm3ZSQcyry2UQCLcBGAs/s640/d6d0bca64f31251abe01f18b7b85c71d.png" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/abq-balloons.jpg">
-								<img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="View from a hot air balloon of other balloons" />
-							</a>
+							<a href="https://2.bp.blogspot.com/-t8KSarutr64/Wm7_2aHLzeI/AAAAAAAAN-o/y_4w-J1XcZkFLE6ZAWsUWYRjjMpVxc1AgCLcBGAs/s1600/giraffe-minimalist-wallpaper-orange.png" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-t8KSarutr64/Wm7_2aHLzeI/AAAAAAAAN-o/y_4w-J1XcZkFLE6ZAWsUWYRjjMpVxc1AgCLcBGAs/s640/giraffe-minimalist-wallpaper-orange.png" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/disney-balloon.jpg">
-								<img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="a balloon fairground ride" />
-							</a>
+							<a href="https://3.bp.blogspot.com/-gVZ6tZgJwXA/Wm7_3I8ffPI/AAAAAAAAN-s/QHSIpsrJpCkWkxVszcT2I5ZhDWFp_YP-gCLcBGAs/s1600/im-500239713.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-gVZ6tZgJwXA/Wm7_3I8ffPI/AAAAAAAAN-s/QHSIpsrJpCkWkxVszcT2I5ZhDWFp_YP-gCLcBGAs/s640/im-500239713.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/bristol-harbor.jpg">
-								<img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="sunrise over a harbor" />
-							</a>
+							<a href="https://2.bp.blogspot.com/-s3RiNkWgmgM/Wm7_8bcoCLI/AAAAAAAAN-8/WgX--atQIywQ9LGvt2NGl7p00CLsmGNLACLcBGAs/s1600/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_3840x2400.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-s3RiNkWgmgM/Wm7_8bcoCLI/AAAAAAAAN-8/WgX--atQIywQ9LGvt2NGl7p00CLsmGNLACLcBGAs/s640/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_3840x2400.jpg" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/bristol-balloons2.jpg">
-								<img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="three hot air balloons in a blue sky" />
-							</a>
+							<a href="https://4.bp.blogspot.com/-GWdKKFbWlQI/Wm7_4dZnYZI/AAAAAAAAN-w/A_bmz0q5RBk69PsmQdaZxNSjmFC1_adlACLcBGAs/s1600/pluggegg-minimalist-wallpaper-light1.png" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-GWdKKFbWlQI/Wm7_4dZnYZI/AAAAAAAAN-w/A_bmz0q5RBk69PsmQdaZxNSjmFC1_adlACLcBGAs/s640/pluggegg-minimalist-wallpaper-light1.png" /></a>
 						</figure>
 						<figure>
-							<a data-gallery="1" data-gallery-id="1" href="https://assets.codepen.io/12005/toronto.jpg">
-								<img src="https://assets.codepen.io/12005/toronto.jpg" alt="the Toronto light up sign at night" />
-							</a>
+							<a href="https://4.bp.blogspot.com/-J3Bl0x_wzk0/Wm7_1kwaL1I/AAAAAAAAN-k/cxpXkxtWGiw3KukC40jAvdXNQYggObZawCLcBGAs/s1600/Poly-Lakeside.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-J3Bl0x_wzk0/Wm7_1kwaL1I/AAAAAAAAN-k/cxpXkxtWGiw3KukC40jAvdXNQYggObZawCLcBGAs/s640/Poly-Lakeside.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://3.bp.blogspot.com/-2bfcjpXmfIg/Wm7_5iS9OhI/AAAAAAAAN-0/eVNWrngy50wFG4nOGiP17OrgNZ2Uri_mgCLcBGAs/s1600/tumblr_static_summer_sunset_created_by_-_marilou.png" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-2bfcjpXmfIg/Wm7_5iS9OhI/AAAAAAAAN-0/eVNWrngy50wFG4nOGiP17OrgNZ2Uri_mgCLcBGAs/s640/tumblr_static_summer_sunset_created_by_-_marilou.png" /></a>
+						</figure>
+						<figure>
+							<a href="https://1.bp.blogspot.com/-FDco02CRp_M/Wm7_y1G4MtI/AAAAAAAAN-U/zIZ8UH6RzKUe_hSxW3qWF7OuPOnv6wZ2ACLcBGAs/s1600/33.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/-FDco02CRp_M/Wm7_y1G4MtI/AAAAAAAAN-U/zIZ8UH6RzKUe_hSxW3qWF7OuPOnv6wZ2ACLcBGAs/s640/33.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://4.bp.blogspot.com/-udI8g-T4oLU/Wm7_7gFgX5I/AAAAAAAAN-4/eDjcDOBeWdkxjBop_YzyJeuAIplOsm8ogCLcBGAs/s1600/81651.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-udI8g-T4oLU/Wm7_7gFgX5I/AAAAAAAAN-4/eDjcDOBeWdkxjBop_YzyJeuAIplOsm8ogCLcBGAs/s640/81651.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://1.bp.blogspot.com/--rMwWpO1vJA/Wm7_ywQ2x9I/AAAAAAAAN-Q/o7LaowZvlwo-ADwhiuz1V96OwoIQYKHZwCLcBGAs/s1600/4094001-wallpaper-minimalist.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/--rMwWpO1vJA/Wm7_ywQ2x9I/AAAAAAAAN-Q/o7LaowZvlwo-ADwhiuz1V96OwoIQYKHZwCLcBGAs/s640/4094001-wallpaper-minimalist.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://3.bp.blogspot.com/-johAto_36nM/Wm7_z6LsHyI/AAAAAAAAN-c/NI_rGHNhpWM-VnnEzAWHYsSgVh0dwWzsACLcBGAs/s1600/4675134-wallpaper-minimalist.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-johAto_36nM/Wm7_z6LsHyI/AAAAAAAAN-c/NI_rGHNhpWM-VnnEzAWHYsSgVh0dwWzsACLcBGAs/s640/4675134-wallpaper-minimalist.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://1.bp.blogspot.com/-pea-82vMWP8/Wm7_yzjwaMI/AAAAAAAAN-Y/Xa3bx0C0Itcjq6Mbt26Nx0l2eDfZgT6wQCLcBGAs/s1600/164541026-minimalism-wallpapers.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://1.bp.blogspot.com/-pea-82vMWP8/Wm7_yzjwaMI/AAAAAAAAN-Y/Xa3bx0C0Itcjq6Mbt26Nx0l2eDfZgT6wQCLcBGAs/s640/164541026-minimalism-wallpapers.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://2.bp.blogspot.com/-rP2kIPiCn3Y/Wm7_1JLC32I/AAAAAAAAN-g/2i2BJuDjHGoFhWQ89UaMpm3ZSQcyry2UQCLcBGAs/s1600/d6d0bca64f31251abe01f18b7b85c71d.png" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-rP2kIPiCn3Y/Wm7_1JLC32I/AAAAAAAAN-g/2i2BJuDjHGoFhWQ89UaMpm3ZSQcyry2UQCLcBGAs/s640/d6d0bca64f31251abe01f18b7b85c71d.png" /></a>
+						</figure>
+						<figure>
+							<a href="https://4.bp.blogspot.com/-GWdKKFbWlQI/Wm7_4dZnYZI/AAAAAAAAN-w/A_bmz0q5RBk69PsmQdaZxNSjmFC1_adlACLcBGAs/s1600/pluggegg-minimalist-wallpaper-light1.png" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-GWdKKFbWlQI/Wm7_4dZnYZI/AAAAAAAAN-w/A_bmz0q5RBk69PsmQdaZxNSjmFC1_adlACLcBGAs/s640/pluggegg-minimalist-wallpaper-light1.png" /></a>
+						</figure>
+						<figure>
+							<a href="https://3.bp.blogspot.com/-2bfcjpXmfIg/Wm7_5iS9OhI/AAAAAAAAN-0/eVNWrngy50wFG4nOGiP17OrgNZ2Uri_mgCLcBGAs/s1600/tumblr_static_summer_sunset_created_by_-_marilou.png" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-2bfcjpXmfIg/Wm7_5iS9OhI/AAAAAAAAN-0/eVNWrngy50wFG4nOGiP17OrgNZ2Uri_mgCLcBGAs/s640/tumblr_static_summer_sunset_created_by_-_marilou.png" /></a>
+						</figure>
+						<figure>
+							<a href="https://4.bp.blogspot.com/-J3Bl0x_wzk0/Wm7_1kwaL1I/AAAAAAAAN-k/cxpXkxtWGiw3KukC40jAvdXNQYggObZawCLcBGAs/s1600/Poly-Lakeside.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://4.bp.blogspot.com/-J3Bl0x_wzk0/Wm7_1kwaL1I/AAAAAAAAN-k/cxpXkxtWGiw3KukC40jAvdXNQYggObZawCLcBGAs/s640/Poly-Lakeside.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://2.bp.blogspot.com/-t8KSarutr64/Wm7_2aHLzeI/AAAAAAAAN-o/y_4w-J1XcZkFLE6ZAWsUWYRjjMpVxc1AgCLcBGAs/s1600/giraffe-minimalist-wallpaper-orange.png" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-t8KSarutr64/Wm7_2aHLzeI/AAAAAAAAN-o/y_4w-J1XcZkFLE6ZAWsUWYRjjMpVxc1AgCLcBGAs/s640/giraffe-minimalist-wallpaper-orange.png" /></a>
+						</figure>
+						<figure>
+							<a href="https://2.bp.blogspot.com/-s3RiNkWgmgM/Wm7_8bcoCLI/AAAAAAAAN-8/WgX--atQIywQ9LGvt2NGl7p00CLsmGNLACLcBGAs/s1600/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_3840x2400.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://2.bp.blogspot.com/-s3RiNkWgmgM/Wm7_8bcoCLI/AAAAAAAAN-8/WgX--atQIywQ9LGvt2NGl7p00CLsmGNLACLcBGAs/s640/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_3840x2400.jpg" /></a>
+						</figure>
+						<figure>
+							<a href="https://3.bp.blogspot.com/-gVZ6tZgJwXA/Wm7_3I8ffPI/AAAAAAAAN-s/QHSIpsrJpCkWkxVszcT2I5ZhDWFp_YP-gCLcBGAs/s1600/im-500239713.jpg" style="margin-left: 10px; margin-right: 10px"><img src="https://3.bp.blogspot.com/-gVZ6tZgJwXA/Wm7_3I8ffPI/AAAAAAAAN-s/QHSIpsrJpCkWkxVszcT2I5ZhDWFp_YP-gCLcBGAs/s640/im-500239713.jpg" /></a>
 						</figure>
 					</div>
 				</div>
@@ -212,6 +231,7 @@
 		</footer>
 	</div>
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer crossorigin="anonymous" src="https://cdn.jsdelivr.net/gh/Arlina-Design/FlamingTree@master/lightgallery.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script defer src="js/scripts.js"></script>
 </body>

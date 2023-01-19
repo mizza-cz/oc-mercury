@@ -327,7 +327,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 12px !important;
-    
+
     @media (max-width: 1023px) {
       width: 84px;
     }
@@ -443,5 +443,8 @@
   #new-mercury .lg\:text-right {
     text-align: right;
   }
+}
+.lg-outer .lg-thumb-outer {
+  display: none !important;
 }
 /*! purgecss end ignore */
