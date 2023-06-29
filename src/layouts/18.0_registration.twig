@@ -1,0 +1,21 @@
+{% extends "@components/base/base.twig" %} {% set title = "18.0_registration" %}
+{% block main %}
+
+<section class="c-static-section">
+  <div class="container">
+    <div class="header-section">
+      <h1 class="mb-6 h1">Registrace</h1>
+      <p class="p1">
+        Chcete dostávat informace o slevách, akčních nabídkách a jiných
+        novinkách z DOC Mercury? Odebírejte je ve vašem emailu.
+      </p>
+    </div>
+    <div class="row gy-10">
+      <div class="col-lg-12 col">
+        {% include "@components/registration/registration.twig" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/social/social.twig" %} {% endblock %}

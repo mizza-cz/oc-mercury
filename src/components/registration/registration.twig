@@ -1,0 +1,56 @@
+<div class="registration" id="registration">
+  <form action="">
+    <label class="registration__label" for="">
+      Jméno*
+      <input id="name" type="text" required />
+    </label>
+    <label class="registration__label" for="">
+      Příjmení*
+      <input id="surname" type="text" required />
+    </label>
+    <label class="registration__label" for="">
+      Email*
+      <input type="email" required />
+    </label>
+    <label class="registration__label" for="">
+      Telefonní číslo
+      <input type="tel" placeholder="+420 xxx xxx xxx" required />
+    </label>
+    <label class="registration__label" for="">
+      PSČ*
+      <input type="tel" placeholder="xxx xx" required />
+    </label>
+    <div class="row">
+      <div class="col-md-6">
+        <label class="registration__label" for="udaje">
+          Přečetl/a jsem Zásady <a href="#">o ochrany osobních údajů*</a>
+        </label>
+        <label for="udaje" class="registration__radio">
+          <span>Ano</span>
+          <input type="radio" id="udaje" onchange="toggleRadioClass(this)" />
+        </;>
+      </div>
+      <div class="col-md-6">
+        <label  class="registration__label" for="news">
+          Souhlasím se zasíláním newsletterů o slevových či jiných nabídek
+        </label>
+        <label for="news" class="registration__radio">
+          <span>Ano</span>
+          <input type="radio" id="news" onchange="toggleRadioClass(this)" />
+        </label>
+      </div>
+    </div>
+    <button class="registration__btn">Odeslat</button>
+  </form>
+</div>
+
+<script>
+  function toggleRadioClass(radio) {
+    var radioContainer = radio.parentNode;
+    if (radio.checked) {
+      radioContainer.classList.add("active");
+    } else {
+      radioContainer.classList.remove("active");
+    }
+  }
+</script>
