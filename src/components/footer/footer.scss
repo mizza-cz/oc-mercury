@@ -82,12 +82,12 @@
       margin-bottom: 40px;
       & > span {
         color: var(--color-blue-light);
-        padding: 10px 0.4rem 0;
+        padding: 0 0.4rem 0;
         display: block;
       }
       & > input {
-        height: 29px;
-        width: 30px;
+        height: 29px !important;
+        width: 30px !important;
         -webkit-appearance: none;
         -moz-appearance: none;
         -o-appearance: none;
@@ -98,6 +98,9 @@
         transition-duration: 0.3s;
         background-color: var(--color-dark);
         cursor: pointer;
+        &::before {
+          display: none !important;
+        }
       }
       & > input:checked {
         border: 1px solid #41b883;
@@ -115,6 +118,10 @@
 
       & > input:active {
         border: 2px solid #34495e;
+      }
+      input[type="checkbox"]::after,
+      input[type="checkbox"]::before {
+        display: none;
       }
     }
   }

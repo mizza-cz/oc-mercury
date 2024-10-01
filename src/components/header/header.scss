@@ -1,5 +1,5 @@
 .header {
-  z-index: 99;
+  z-index: 9999;
   background: var(--color-dark);
   height: 120px;
   position: fixed;
@@ -76,6 +76,139 @@
       @include media-breakpoint-down(lg) {
         top: 4.5rem;
       }
+    }
+  }
+  .nav-link {
+    font-family: "Gotham";
+    color: var(--color-light);
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2px;
+    @include media-breakpoint-down(xxl) {
+      line-height: 150%;
+      font-size: 18px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+    &.show {
+      color: var(--color-light);
+    }
+  }
+  .nav-item {
+    padding: 0 24px;
+
+    .nav-link.active,
+    .nav-link:focus,
+    .nav-link:hover {
+      border-bottom: 2px solid var(--color-blue-light);
+      color: var(--color-light);
+      @include media-breakpoint-down(xxl) {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+    }
+  }
+  .dropdown {
+    &-toggle {
+      &::after {
+        border-left: 0.5em solid transparent;
+        border-right: 0.5em solid transparent;
+        border-top: 0.4em solid;
+        margin-left: 4px;
+        margin-bottom: -4px;
+        @include media-breakpoint-down(xxl) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    &-menu {
+      position: absolute;
+      min-width: 7rem;
+      border: none;
+      box-shadow: 0px 1px 4px 0px rgba(#000, 0.15);
+      border-radius: 0;
+      padding: 8px 0;
+      @include media-breakpoint-down(xxl) {
+        text-align: center;
+        position: relative;
+        box-shadow: none;
+        display: block;
+        padding: 0;
+        width: 100%;
+        background-color: var(--color-dark);
+      }
+      li {
+        @include media-breakpoint-down(xxl) {
+          border: none;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      &[data-bs-popper] {
+        margin-top: 0;
+      }
+    }
+    &-item {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 700;
+      color: var(--color-dark);
+      padding: 8px 16px;
+      font-family: "Gotham";
+      @include media-breakpoint-down(xxl) {
+        background: var(--color-dark);
+        color: var(--color-light);
+        font-size: 18px;
+        line-height: 50px;
+        font-weight: 400;
+        padding: 0;
+        margin-bottom: 8px;
+        border-bottom: 1px solid transparent;
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          border-bottom: 1px solid var(--color-light);
+          background: var(--color-dark);
+          color: var(--color-light);
+        }
+      }
+    }
+  }
+  .nav-link.dropdown-toggle {
+    text-decoration: none;
+  }
+  .nav-item--more {
+    padding-left: 56px;
+    @media (max-width: 1600px) {
+      padding-top: 60px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include media-breakpoint-down(xxl) {
+      .nav-link {
+        display: none;
+      }
+    }
+  }
+  @media all and (min-width: 1400px) {
+    .navbar .nav-item .dropdown-menu {
+      display: none;
+    }
+    .nav-item:hover .dropdown-menu {
+      display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+      margin-top: 0;
     }
   }
 }
@@ -204,138 +337,5 @@
   }
   @include media-breakpoint-only(xxl) {
     display: none;
-  }
-}
-.nav-link {
-  font-family: "Gotham";
-  color: var(--color-light);
-  font-size: 24px;
-  line-height: 100%;
-  font-weight: 500;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 2px;
-  @include media-breakpoint-down(xxl) {
-    line-height: 150%;
-    font-size: 18px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 4px;
-    margin-bottom: 16px;
-  }
-  &.show {
-    color: var(--color-light);
-  }
-}
-.nav-item {
-  padding: 0 24px;
-
-  .nav-link.active,
-  .nav-link:focus,
-  .nav-link:hover {
-    border-bottom: 2px solid var(--color-blue-light);
-    color: var(--color-light);
-    @include media-breakpoint-down(xxl) {
-      padding-left: 6px;
-      padding-right: 6px;
-    }
-  }
-}
-.dropdown {
-  &-toggle {
-    &::after {
-      border-left: 0.5em solid transparent;
-      border-right: 0.5em solid transparent;
-      border-top: 0.4em solid;
-      margin-left: 4px;
-      margin-bottom: -4px;
-      @include media-breakpoint-down(xxl) {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
-  &-menu {
-    position: absolute;
-    min-width: 7rem;
-    border: none;
-    box-shadow: 0px 1px 4px 0px rgba(#000, 0.15);
-    border-radius: 0;
-    padding: 8px 0;
-    @include media-breakpoint-down(xxl) {
-      text-align: center;
-      position: relative;
-      box-shadow: none;
-      display: block;
-      padding: 0;
-      width: 100%;
-      background-color: var(--color-dark);
-    }
-    li {
-      @include media-breakpoint-down(xxl) {
-        border: none;
-      }
-      &:last-child {
-        border-bottom: none;
-      }
-    }
-    &[data-bs-popper] {
-      margin-top: 0;
-    }
-  }
-  &-item {
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 700;
-    color: var(--color-dark);
-    padding: 8px 16px;
-    font-family: "Gotham";
-    @include media-breakpoint-down(xxl) {
-      background: var(--color-dark);
-      color: var(--color-light);
-      font-size: 18px;
-      line-height: 50px;
-      font-weight: 400;
-      padding: 0;
-      margin-bottom: 8px;
-      border-bottom: 1px solid transparent;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        border-bottom: 1px solid var(--color-light);
-        background: var(--color-dark);
-        color: var(--color-light);
-      }
-    }
-  }
-}
-.nav-link.dropdown-toggle {
-  text-decoration: none;
-}
-.nav-item--more {
-  padding-left: 56px;
-  @media (max-width: 1600px) {
-    padding-top: 60px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include media-breakpoint-down(xxl) {
-    .nav-link {
-      display: none;
-    }
-  }
-}
-@media all and (min-width: 1400px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-  }
-  .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-  .navbar .nav-item .dropdown-menu {
-    margin-top: 0;
   }
 }

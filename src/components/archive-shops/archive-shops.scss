@@ -123,6 +123,9 @@
         width: 48px;
       }
     }
+    input[type="checkbox"]::before {
+      display: none;
+    }
     input[type="checkbox"]:after {
       transition: all 0.5s;
       content: "";
@@ -148,6 +151,7 @@
       transition: all 0.5s;
       right: 0px;
       background-color: #63b770;
+      transform: none;
     }
 
     input[type="checkbox"]:hover:not(:checked):not(:disabled):after,

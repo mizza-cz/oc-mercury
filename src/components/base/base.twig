@@ -22,9 +22,13 @@
     />
     <link
       rel="preload"
-      href="https://code.jquery.com/jquery-3.6.0.min.js"
+      href="https://code.jquery.com/jquery-3.7.1.min.js"
       as="script"
       crossorigin
+    />
+    <link
+      href="https://www.borymall.sk/themes/borymall/assets/vendor/bootstrap-select-1.13.14/dist/css/bootstrap-select.min.css"
+      rel="stylesheet"
     />
     <link
       rel="preload"
@@ -43,9 +47,8 @@
       {% include "@components/footer/footer.twig" %}
     </div>
     <script
-      defer
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
     <script
@@ -59,6 +62,30 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/svg-pan-zoom-master/dist/svg-pan-zoom.min.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/svg-pan-zoom-master/demo/hammer.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/aos/aos.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/gijgo/js/core.js"></script>
+    <script src="https://www.borymall.sk/themes/borymall/assets/vendor/gijgo/js/datepicker.min.js"></script>
+    <script>
+      mapShops = $("#shops").data("shops");
+      mapPlaces = $("#shops").data("places");
+      mapCategories = $("#shops").data("categories");
+      function isTouchDevice() {
+        let isTouchable =
+          "ontouchstart" in window ||
+          navigator.maxTouchPoints > 0 ||
+          navigator.msMaxTouchPoints > 0;
+        if (isTouchable) {
+          $("body").addClass("touchable");
+        } else {
+          $("body").removeClass("touchable");
+        }
+        return isTouchable;
+      }
+    </script>
     <script defer src="js/scripts.js"></script>
   </body>
 </html>

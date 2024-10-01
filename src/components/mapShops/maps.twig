@@ -1,0 +1,233 @@
+<section class="mapShops" id="shops-map-page">
+  <div class="overflow-visible" id="app">
+    <div id="full-overlay"></div>
+    <div class="container">
+      <h1 class="mb-3">Mapa obchodů</h1>
+    </div>
+    <div class="container mb-4 pt-4 filter-container">
+      <div class="row">
+        <div class="col-12 col-xx-6 mb-4">
+          <ul class="nav map-tabs" id="map-floor-tabs">
+            <li class="nav-item">
+              <a
+                aria-selected="true"
+                class="nav-link"
+                data-floor="0"
+                data-toggle="tab"
+                href="#garage-map"
+                id="garage-map-tab"
+                role="tab"
+                >Garáž</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                aria-selected="true"
+                class="active nav-link"
+                data-floor="1"
+                data-toggle="tab"
+                href="#floor1-map"
+                id="floor1-map-tab"
+                role="tab"
+                >1.NP</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                aria-selected="true"
+                class="nav-link"
+                data-floor="2"
+                data-toggle="tab"
+                href="#floor2-map"
+                id="floor2-map-tab"
+                role="tab"
+                >2.NP</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                aria-selected="true"
+                class="nav-link"
+                data-floor="3"
+                data-toggle="tab"
+                href="#floor3-map"
+                id="floor3-map-tab"
+                role="tab"
+                >3.NP</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-xx-6">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6 pr-md-2 mb-4">
+              <div class="input-group">
+                <select
+                  class="selectpicker"
+                  data-dropup-auto="false"
+                  autocomplete="off"
+                  id="map-filter-by-category"
+                >
+                  <option selected value="0">Vyberte kategorii</option>
+
+                  <option
+                    data-shops="101;119;123;224;225;226;228;229;230;s8;216;208;s9;s10"
+                    value="c4"
+                  >
+                    Restaurace, kavárny, občerstvení
+                  </option>
+
+                  <option data-shops="106;s1;s2;124;s5" value="c1">
+                    Potraviny, delikatesy
+                  </option>
+                  <option data-shops="103; 99" value="c2">
+                    Sport a sportovní potřeby
+                  </option>
+                  <option data-shops="102;105;114" value="c3">
+                    Elektro, knihy
+                  </option>
+
+                  <option
+                    data-shops="117;118;115;113;110;126;111a;111b;111c;212;222;001;301a;301b"
+                    value="c5"
+                  >
+                    Služby a různé
+                  </option>
+                  <option data-shops="104;s6" value="c6">
+                    Klenoty, šperky
+                  </option>
+                  <option data-shops="121;125;s4;221" value="c7">Tabák</option>
+                  <option data-shops="108;109;116;s7;233;232;205" value="c8">
+                    Zdraví a krása
+                  </option>
+                  <option data-shops="120;204;217" value="c9">
+                    Volný čas, zábava, děti
+                  </option>
+                  <option
+                    data-shops="122;215;214;209;206;218;219;201"
+                    value="c10"
+                  >
+                    Oblečení a móda
+                  </option>
+
+                  <option data-shops="107;211;220" value="c11">
+                    Domácnost, bytové dopňky
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 pl-md-2 mb-4">
+              <div class="input-group">
+                <select
+                  class="selectpicker search-bar"
+                  autocomplete="off"
+                  data-live-search-normalize="true"
+                  data-dropup-auto="false"
+                  data-live-search="true"
+                  data-live-search-placeholder="Vyhledat obchod"
+                  id="map-search-shop"
+                >
+                  <option value="106">Albert</option>
+                  <option value="103">Intersport</option>
+
+                  <option selected value="0">Vyhledat obchod</option>
+                  <option value="101">Starbucks</option>
+                  <option value="102">Datart</option>
+
+                  <option value="105">Knebl mobil servis</option>
+
+                  <option value="119">Tchibo</option>
+                  <option value="123">Minit</option>
+                  <option value="117">PET Center</option>
+                  <option value="118">
+                    Dopravní podnik - předprodej jízdenek
+                  </option>
+                  <option value="115">O2</option>
+                  <option value="113">ČSOB</option>
+                  <option value="110">M-Klíče</option>
+                  <option value="s1">Svět oříšků</option>
+                  <option value="s2">Fruitisimo</option>
+                  <option value="124">Leipomo</option>
+                  <option value="s5">Uzeniny Vydrová</option>
+                  <option value="126">Služebna Městské policie</option>
+                  <option value="s6">Skalimar</option>
+                  <option value="104">Bijou Brigitte</option>
+                  <option value="114">Levné knihy</option>
+                  <option value="121">Geco tabák</option>
+                  <option value="125">
+                    Don Pealo Tabák & Víno & Destiláty
+                  </option>
+                  <option value="s4">IQOS</option>
+                  <option value="s9">Trdlokafe</option>
+                  <option value="s10">Ledová říše</option>
+                  <option value="108">Grand Optical</option>
+                  <option value="109">Dr.Max</option>
+                  <option value="116">TETA Drogerie a lékárna</option>
+                  <option value="120">Albi</option>
+                  <option value="204">Dráčik</option>
+                  <option value="217">McPen</option>
+                  <option value="122">C&A</option>
+                  <option value="107">Flamengo</option>
+                  <option value="220">Nejči nábytek</option>
+                  <option value="211">Scan quilt</option>
+                  <option value="111a">Směnárna ČB</option>
+                  <option value="111b">Numismatika</option>
+                  <option value="111c">Výkup zlata ČB</option>
+                  <option value="215">Cropp</option>
+                  <option value="214">Pepco</option>
+                  <option value="209">Sinsay</option>
+                  <option value="206">Gate</option>
+                  <option value="218">House</option>
+                  <option value="219">Orsay</option>
+
+                  <option value="205">Plasma Place</option>
+                  <option value="232">NANI Nails</option>
+                  <option value="233">Voque Nails</option>
+                  <option value="s7">Under Barber</option>
+
+                  <option value="212">Tipsport</option>
+                  <option value="222">Erotic City</option>
+                  <option value="001">Myčka Mercury</option>
+                  <option value="221">Vaprio.cz</option>
+                  <option value="224">Guo Running Sushi</option>
+                  <option value="225">Bouda Burgers</option>
+                  <option value="226">Mr. Thai</option>
+                  <option value="228">Wok Food</option>
+                  <option value="229">Mocu Mocu</option>
+                  <option value="230">Fast & Good</option>
+                  <option value="s8">DéKáčko</option>
+                  <option value="216">Chai Time</option>
+                  <option value="208">KFC</option>
+
+                  <option value="301a">GW Jihotrans</option>
+                  <option value="301b">Dispečink GW Bus</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-5" id="floor-map">
+      <div class="container maps-conatiner">
+        <div class="mapShops_inner">
+          <div class="mapShops_panel">
+            <img src="images/ico/legenda.svg" alt="" />
+          </div>
+          <div class="tab-content temporary-hidden" data-kiosk-id="1">
+            <style id="category-styles"></style>
+
+            {% include "@components/mapShops/mapFlor-0.twig" %} {% include
+            "@components/mapShops/mapFlor-1.twig" %} {% include
+            "@components/mapShops/mapFlor-2.twig" %} {% include
+            "@components/mapShops/mapFlor-3.twig" %}
+          </div>
+        </div>
+      </div>
+      <a class="shop-popover general-shop-popover" href="#"></a>
+      <div class="info-icon-popover general-info-icon"></div>
+    </div>
+  </div>
+  {% include "@components/mapShops/mapData.twig" %}
+</section>
